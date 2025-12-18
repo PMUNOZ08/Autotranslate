@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>trans 2.2</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>    @State private var languages = [
+        Language(id: "ar", name: "Arabic", isSelected: false),
+        Language(id: "zh", name: "Chinese", isSelected: false),
+        Language(id: "nl", name: "Dutch", isSelected: false),
+        Language(id: "fr", name: "French", isSelected: false),
+        Language(id: "de", name: "German", isSelected: false),
+        Language(id: "hi", name: "Hindi", isSelected: false),
+        Language(id: "in", name: "Indonesian", isSelected: false),
+        Language(id: "it", name: "Italian", isSelected: false),
+        Language(id: "ja", name: "Japanese", isSelected: false),
+        Language(id: "ko", name: "Korean", isSelected: false),
+        Language(id: "pl", name: "Polish", isSelected: false),
+        Language(id: "pt", name: "Portuguese", isSelected: false),
+        Language(id: "ru", name: "Russian", isSelected: false),
+        Language(id: "es", name: "Spanish", isSelected: true),
+        Language(id: "th", name: "Thai", isSelected: false),
+        Language(id: "tr", name: "Turkish", isSelected: false),
+        Language(id: "uk", name: "Ukrainian", isSelected: false),
+        Language(id: "vi", name: "Vietnamese", isSelected: false),
+    ]</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>049343BD-5606-4706-BED6-9E075B23A456</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetSummary</key>
+	<string></string>
+	<key>IDECodeSnippetTitle</key>
+	<string>Create languages</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

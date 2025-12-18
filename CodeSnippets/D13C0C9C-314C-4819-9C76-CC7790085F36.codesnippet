@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>trans 2.7</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>    func translate(using session: TranslationSession) async {
+        do {
+            // Trans 3.3 (Prepare session when waiting)
+            if translationState == .creating {
+                // Trans 4.13  Conver string to requests
+                let result = try await session.translate(input)
+                print("NSCoder - \(result.targetText)")
+                
+                languageIndex += 1
+                doNextTranslation()
+            }
+        } catch {
+            print(error.localizedDescription)
+            translationState = .waiting
+        }
+    }</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>D13C0C9C-314C-4819-9C76-CC7790085F36</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetSummary</key>
+	<string></string>
+	<key>IDECodeSnippetTitle</key>
+	<string>Replace translate function to allow several languages</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

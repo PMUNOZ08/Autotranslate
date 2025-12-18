@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>trans 3.5</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>              Group {
+                    switch translationState {
+                    case .waiting:
+                        Button("Create Translations", action: createAllTranslations)
+                    case .creating:
+                        ProgressView()
+                    case .done:
+                        // Trans 4.12 Replace Done text by button to export
+                        Text("Done")
+                    }
+                }
+                .frame(height: 60)</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>729DEEEF-7B16-4535-BDF8-6B7E0746DE34</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetSummary</key>
+	<string></string>
+	<key>IDECodeSnippetTitle</key>
+	<string>Replace button, to show state on trnaslation</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

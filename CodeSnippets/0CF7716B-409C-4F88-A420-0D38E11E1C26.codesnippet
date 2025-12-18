@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>trans 2.3</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>      NavigationSplitView {
+            ScrollView {
+                Form {
+                    ForEach($languages) { $language in
+                        Toggle(language.name, isOn: $language.isSelected)
+                    }
+                }
+            }
+        } detail: {
+            // Trans 2.9 ( Add button to create all trnaslations)
+            TextEditor(text: $input)
+                .font(.largeTitle)
+        }</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>0CF7716B-409C-4F88-A420-0D38E11E1C26</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetSummary</key>
+	<string></string>
+	<key>IDECodeSnippetTitle</key>
+	<string>SplitView selector languages)</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

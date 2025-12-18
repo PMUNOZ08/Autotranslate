@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>trans 3.1</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>    func updateLanguages(oldValue: [Language], newValue: [Language]) {
+        let oldSet = Set(oldValue.filter(\.isSelected))
+        let newSet = Set(newValue.filter(\.isSelected))
+
+        // Subtract the old languages from the new languages.
+        let difference = newSet.subtracting(oldSet)
+
+        // Check to see if we had an addition.
+        if let newLanguage = difference.first {
+            configuration.source = Locale.Language(identifier: newLanguage.id)
+            configuration.invalidate()
+        }
+
+        translationState = .waiting
+    }</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>B91AA164-737B-4C4B-8088-16617B2BA3BA</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetSummary</key>
+	<string></string>
+	<key>IDECodeSnippetTitle</key>
+	<string>Create function updateLanguages</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

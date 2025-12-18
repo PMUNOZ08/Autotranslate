@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>trans 2.6</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>    func doNextTranslation() {
+        guard languageIndex &lt; translatingLanguages.count else {
+            translationState = .done
+            return
+        }
+        
+        let language = translatingLanguages[languageIndex]
+        configuration.source = Locale.Language(identifier: "en")
+        configuration.target = Locale.Language(identifier: language.id)
+        configuration.invalidate()
+    }</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>CDF6ADA3-0407-4E71-865E-EE49F298594B</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetSummary</key>
+	<string></string>
+	<key>IDECodeSnippetTitle</key>
+	<string>Create doNextTranslation function</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

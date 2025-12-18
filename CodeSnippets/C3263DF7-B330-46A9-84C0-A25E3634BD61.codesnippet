@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>trans 4.7</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>    init(sourceLanguage: String, strings: [String: TranslationString] = [:]) {
+        self.sourceLanguage = sourceLanguage
+        self.strings = strings
+    }
+    
+    init(configuration: ReadConfiguration) throws {
+        if let data = configuration.file.regularFileContents {
+            self = try JSONDecoder().decode(TranslationDocument.self, from: data)
+        } else {
+            sourceLanguage = "en"
+            strings = [:]
+        }
+        
+        // Trans 4.8 Create func fileWrapper
+    }</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>C3263DF7-B330-46A9-84C0-A25E3634BD61</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetSummary</key>
+	<string></string>
+	<key>IDECodeSnippetTitle</key>
+	<string>Create constructors</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>
