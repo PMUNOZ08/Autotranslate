@@ -1,0 +1,25 @@
+{
+  "sourceLanguage" : "en",
+  "strings" : {
+    "Create Translations" : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Spanish for Create Translations"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "French fo Create Translations"
+          }
+        }
+      }
+    },
+    "Export" : {
+
+    }
+  },
+  "version" : "1.1"
+}
